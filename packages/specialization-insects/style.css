@@ -1,0 +1,13 @@
+@import '../shared/base.css';
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#container {
+  background-image: paint(container-background);
+  padding: 40px 40px;
+  width: 1400px;
+}

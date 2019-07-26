@@ -1,15 +1,19 @@
 @import '/node_modules/normalize.css/normalize.css';
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&display=swap');
+@import url('/node_modules/@typopro/web-space-mono/TypoPRO-SpaceMono.css');
 
 body {
   background-color: black;
   color: white;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Space Mono', monospace;
   line-height: 1.4;
 }
 
 ul {
   list-style-type: none;
+}
+
+li::before {
+  content: '-';
 }
 
 a {
@@ -22,6 +26,7 @@ a:visited {
 }
 
 main {
+  height: 100%;
   margin: auto;
   width: 1400px;
 }
