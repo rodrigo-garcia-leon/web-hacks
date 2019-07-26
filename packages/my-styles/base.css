@@ -1,0 +1,27 @@
+@import '/node_modules/normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Anonymous Pro', monospace;
+  line-height: 1.4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #50e3c2;
+}
+
+a:hover,
+a:visited {
+  color: #ff2e88;
+}
+
+main {
+  margin: auto;
+  width: 1400px;
+}

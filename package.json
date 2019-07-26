@@ -1,0 +1,36 @@
+{
+  "name": "web-hacks",
+  "version": "1.0.0",
+  "description": "Web Hacks 🕸🤓",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigo-garcia-leon/web-hacks.git"
+  },
+  "keywords": [
+    "web",
+    "hacks"
+  ],
+  "author": "Rodrigo García <yo@rodrigogarcia.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrigo-garcia-leon/web-hacks/issues"
+  },
+  "homepage": "https://github.com/rodrigo-garcia-leon/web-hacks#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@open-wc/eslint-config": "^1.0.0",
+    "@open-wc/prettier-config": "^0.1.10",
+    "es-dev-server": "^1.7.2",
+    "eslint": "^6.1.0",
+    "normalize.css": "^8.0.1"
+  },
+  "scripts": {
+    "start": "es-dev-server index.html --watch --http2 --node-resolve --open",
+    "lint:eslint": "eslint --ext .js,.html .",
+    "format:eslint": "eslint --ext .js,.html . --fix",
+    "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
+    "format:prettier": "prettier \"**/*.js\" --write",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "format": "npm run format:eslint && npm run format:prettier"
+  }
+}
