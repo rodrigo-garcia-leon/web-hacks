@@ -20,7 +20,7 @@ function draw(canvas) {
 }
 
 function run() {
-  const canvas = document.getElementById('sea-joy');
+  const canvas = document.getElementById('oceano-iridiscente');
 
   canvas.height = 800;
   canvas.width = 1400;
