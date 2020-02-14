@@ -1,8 +1,11 @@
-import { drawHorizontalLine, drawVerticalLine, range } from '../shared';
+/* eslint-disable */
 
-const xStart  = 10;
-const xStep  = 20;
-const xSpread  = 10;
+import { drawHorizontalLine, drawVerticalLine } from '../shared/draw.js';
+import { range } from '../shared/utils.js';
+
+const xStart = 10;
+const xStep = 20;
+const xSpread = 10;
 const yInnerPadding = 10;
 const yOuterPadding = 20;
 const yPaddingStep = 2;

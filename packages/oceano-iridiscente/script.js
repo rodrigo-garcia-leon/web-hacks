@@ -1,4 +1,5 @@
-import { drawHorizontalLine, range } from '../shared';
+import { drawHorizontalLine } from '../shared/draw.js';
+import { range } from '../shared/utils.js';
 
 const xPadding = 20;
 const yPadding = 20;

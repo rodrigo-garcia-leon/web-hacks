@@ -17,20 +17,39 @@
   },
   "homepage": "https://github.com/rodrigo-garcia-leon/web-hacks#readme",
   "devDependencies": {
-    "@open-wc/eslint-config": "^1.0.0",
+    "@open-wc/eslint-config": "^2.0.0",
     "@open-wc/prettier-config": "^0.1.10",
-    "@typopro/web-space-mono": "^3.7.5",
-    "es-dev-server": "^1.7.2",
+    "es-dev-server": "^1.38.3",
     "eslint": "^6.1.0",
-    "normalize.css": "^8.0.1"
+    "husky": "^1.0.0",
+    "lint-staged": "^8.0.0"
   },
   "scripts": {
-    "start": "es-dev-server index.html --watch --http2 --node-resolve --open",
-    "lint:eslint": "eslint --ext .js,.html .",
-    "format:eslint": "eslint --ext .js,.html . --fix",
-    "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
-    "format:prettier": "prettier \"**/*.js\" --write",
+    "start": "es-dev-server --app-index index.html --watch --open",
+    "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
+    "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
+    "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
+    "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
     "lint": "npm run lint:eslint && npm run lint:prettier",
     "format": "npm run format:eslint && npm run format:prettier"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@open-wc/eslint-config",
+      "eslint-config-prettier"
+    ]
+  },
+  "prettier": "@open-wc/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }

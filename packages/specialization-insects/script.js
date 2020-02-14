@@ -1,6 +1,10 @@
 async function installPaintWorklet() {
   if ('paintWorklet' in CSS) {
-    await CSS.paintWorklet.addModule('./paint-worklet.js');
+    try {
+      await CSS.paintWorklet.addModule('/packages/specialization-insects/paint-worklet.js');
+    } catch (error) {
+      console.error(error);
+    }
   }
 }
 

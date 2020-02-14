@@ -1,4 +1,4 @@
-import { range } from '../shared';
+import { range } from './utils.js';
 
 export function drawHorizontalLine(ctx, xStart, xStop, xStep, y, ySpread) {
   ctx.save();
@@ -6,7 +6,8 @@ export function drawHorizontalLine(ctx, xStart, xStop, xStep, y, ySpread) {
   ctx.lineWidth = 1;
   ctx.strokeStyle = 'white';
 
-  let yStart = y, yStop;
+  let yStart = y;
+  let yStop;
 
   for (const x of range(xStart, xStop, xStep)) {
     yStop = y + ySpread * (Math.random() - 0.5);
@@ -28,7 +29,8 @@ export function drawVerticalLine(ctx, yStart, yStop, yStep, x, xSpread) {
   ctx.lineWidth = 1;
   ctx.strokeStyle = 'white';
 
-  let xStart = x, xStop;
+  let xStart = x;
+  let xStop;
 
   for (const y of range(yStart, yStop, yStep)) {
     xStop = x + xSpread * (Math.random() - 0.5);
