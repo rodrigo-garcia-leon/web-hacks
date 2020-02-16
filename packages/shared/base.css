@@ -4,6 +4,7 @@
   --color-1: #50e3c2;
   --color-2: #ff2e88;
   --spacer: 32px;
+  --main-width: 60%;
 }
 
 body {
@@ -32,5 +33,5 @@ a:visited {
 
 main {
   margin: var(--spacer) auto;
-  width: 60%;
+  width: var(--main-width);
 }
