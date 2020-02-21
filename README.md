@@ -6,3 +6,4 @@ Web Hacks 🕸🤓
 
 - [ ] check lerna or yarn workspaces
 - [ ] add tron card
+- [ ] add css paint polyfill
