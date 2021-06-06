@@ -24,7 +24,7 @@ function run() {
   const canvas = document.getElementById('oceano-iridiscente');
 
   canvas.height = 800;
-  canvas.width = 1400;
+  canvas.width = window.innerWidth * 0.6;
 
   draw(canvas);
 }
