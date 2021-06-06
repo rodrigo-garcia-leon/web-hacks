@@ -17,12 +17,13 @@
   },
   "homepage": "https://github.com/rodrigo-garcia-leon/web-hacks#readme",
   "devDependencies": {
-    "@open-wc/eslint-config": "^2.0.0",
-    "@open-wc/prettier-config": "^0.1.10",
+    "@open-wc/eslint-config": "^4.3.0",
+    "@open-wc/prettier-config": "^1.1.0",
     "@web/dev-server": "^0.1.17",
-    "eslint": "^6.1.0",
-    "husky": "^1.0.0",
-    "lint-staged": "^8.0.0"
+    "eslint": "^7.28.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
   },
   "scripts": {
     "start": "wds --open",

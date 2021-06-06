@@ -3,7 +3,7 @@ async function installPaintWorklet() {
     try {
       await CSS.paintWorklet.addModule('/packages/specialization-insects/paint-worklet.js');
     } catch (error) {
-      console.error(error);
+      console.error(error); // eslint-disable-line
     }
   }
 }
