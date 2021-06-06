@@ -4,7 +4,7 @@ export function drawHorizontalLine(ctx, xStart, xStop, xStep, y, ySpread) {
   ctx.save();
 
   ctx.lineWidth = 1;
-  ctx.strokeStyle = 'white';
+  ctx.strokeStyle = '#12eae4';
 
   let yStart = y;
   let yStop;
@@ -27,7 +27,7 @@ export function drawVerticalLine(ctx, yStart, yStop, yStep, x, xSpread) {
   ctx.save();
 
   ctx.lineWidth = 1;
-  ctx.strokeStyle = 'white';
+  ctx.strokeStyle = '#12eae4';
 
   let xStart = x;
   let xStop;

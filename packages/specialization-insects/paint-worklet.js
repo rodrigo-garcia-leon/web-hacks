@@ -7,9 +7,8 @@ class ArticlePainter {
     ctx.save();
 
     const gradient = ctx.createLinearGradient(0, 0, 1, height);
-    gradient.addColorStop(0, 'white');
-    gradient.addColorStop(0.5, '#888888');
-    gradient.addColorStop(1, '#444444');
+    gradient.addColorStop(0, '#12eae4');
+    gradient.addColorStop(1, '#005257');
 
     ctx.fillStyle = gradient;
 
