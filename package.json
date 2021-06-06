@@ -19,13 +19,14 @@
   "devDependencies": {
     "@open-wc/eslint-config": "^2.0.0",
     "@open-wc/prettier-config": "^0.1.10",
-    "es-dev-server": "^1.38.3",
+    "@web/dev-server": "^0.1.17",
     "eslint": "^6.1.0",
     "husky": "^1.0.0",
     "lint-staged": "^8.0.0"
   },
   "scripts": {
-    "start": "es-dev-server --app-index index.html --watch --open",
+    "start": "wds --open",
+    "start:watch": "wds --open --watch",
     "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
     "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
