@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap');
 
 :root {
-  --color-1: #50e3c2;
-  --color-2: #ff2e88;
+  --color-1: #12eae4;
+  --color-2: #008289;
   --spacer: 32px;
   --main-width: 60%;
 }
@@ -22,15 +22,13 @@ li::before {
   content: '-';
 }
 
-a {
+a, a:hover, a:visited:hover {
   color: var(--color-1);
 }
 
-a:hover,
 a:visited {
   color: var(--color-2);
 }
-
 main {
   margin: var(--spacer) auto;
   width: var(--main-width);
