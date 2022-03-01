@@ -2,9 +2,13 @@
   "hosting": {
     "public": "./",
     "ignore": [
-      "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "firebase.json",
+      "LICENSE",
+      "package-lock.json",
+      "package.json",
+      "README.md"
     ]
   }
 }
