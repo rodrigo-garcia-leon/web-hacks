@@ -27,7 +27,7 @@ class JobsExplorer extends HTMLElement {
         .reverse()
         .map(
           job => `<div class="job">
-<h3><a href="${job.url}" target="_blank" rel="noopener noreferrer">${job.position}</a></h3>
+<h3><a href="${job.url}" target="_blank" rel="noopener noreferrer nofollow">${job.position}</a></h3>
 <p class="date">${job.modified}</p>
 <p class="company">${job.company}</p>
 <p class="location">${job.location}</p>
