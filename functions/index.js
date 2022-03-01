@@ -37,8 +37,8 @@ async function getJobs() {
   return jobs;
 }
 
-exports.getJobs = functions.https.onRequest((_, response) => {
-  const jobs = getJobs();
+exports.getJobs = functions.https.onRequest(async (_, response) => {
+  const jobs = await getJobs();
   response.send(jobs);
 });
 
