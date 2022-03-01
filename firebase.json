@@ -12,6 +12,22 @@
       "package.json",
       "README.md"
     ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+      
+    ],
     "rewrites": [
       {
         "source": "/api/jobs",
