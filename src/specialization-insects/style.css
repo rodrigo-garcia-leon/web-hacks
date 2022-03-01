@@ -1,4 +1,4 @@
-@import '../shared/base.css';
+@import '../shared/global.css';
 
 article {
   background-image: paint(article);

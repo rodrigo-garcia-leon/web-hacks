@@ -27,12 +27,12 @@
     "prettier": "^2.5.1"
   },
   "scripts": {
-    "start": "wds --open",
-    "start:watch": "wds --open --watch",
-    "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
-    "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
-    "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
-    "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
+    "start": "wds --open --root-dir src",
+    "start:watch": "wds --open --root-dir src --watch",
+    "lint:eslint": "eslint --ext .js . --ignore-path .gitignore",
+    "format:eslint": "eslint --ext .js . --fix --ignore-path .gitignore",
+    "lint:prettier": "prettier --check --ignore-path .gitignore .",
+    "format:prettier": "prettier --write --ignore-path .gitignore .",
     "lint": "npm run lint:eslint && npm run lint:prettier",
     "format": "npm run format:eslint && npm run format:prettier"
   },
