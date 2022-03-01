@@ -9,6 +9,12 @@
       "package-lock.json",
       "package.json",
       "README.md"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/jobs",
+        "function": "getJobs"
+      }
     ]
   }
 }
