@@ -4,6 +4,8 @@
     "ignore": [
       "**/.*",
       "**/node_modules/**",
+      "functions",
+      "firebase-debug.log", 
       "firebase.json",
       "LICENSE",
       "package-lock.json",

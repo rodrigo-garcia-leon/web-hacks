@@ -2,3 +2,4 @@
 .vscode
 .firebase
 node_modules
+firebase-debug.log
