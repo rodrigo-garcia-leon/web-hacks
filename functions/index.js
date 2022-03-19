@@ -46,6 +46,7 @@ if (require.main) {
   (async () => {
     const jobs = await getJobs();
 
+    // eslint-disable-next-line
     console.log(jobs);
   })();
 }
