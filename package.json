@@ -24,11 +24,14 @@
     "firebase-tools": "^10.2.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "rollup": "^2.70.1"
   },
   "scripts": {
+    "build": "rollup -c",
+    "build:watch": "npm run build -- --watch",
     "start": "wds --open --root-dir src",
-    "start:watch": "wds --open --root-dir src --watch",
+    "start:watch": "npm run start -- --watch",
     "lint:eslint": "eslint --ext .js . --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js . --fix --ignore-path .gitignore",
     "lint:prettier": "prettier --check --ignore-path .gitignore .",
