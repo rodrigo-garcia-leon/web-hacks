@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "./src",
+    "ignore": ["./src/jobs-explorer/main.js", "./src/jobs-explorer/JobsExplorer.svelte"],
     "headers": [
       {
         "source": "**",
