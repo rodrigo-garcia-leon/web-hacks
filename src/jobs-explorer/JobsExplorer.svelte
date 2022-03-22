@@ -78,7 +78,7 @@
 <main>
   <h1>Jobs Explorer</h1>
   <div id="controls-container">
-    <ul class="keywords">
+    <ul class={`keywords ${selectedKeywords.length ? 'selected' : ''}`}>
       {#each keywords as keyword}
         <li>
           <a
@@ -89,7 +89,7 @@
         </li>
       {/each}
     </ul>
-    <ul class="locations">
+    <ul class={`locations ${selectedLocations.length ? 'selected' : ''}`}>
       {#each locations as location}
         <li>
           <a
@@ -123,15 +123,43 @@
 </main>
 
 <style>
-  .job {
-    border: solid 1px var(--color-1);
+  #jobs-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
   }
 
-  .keywords a,
-  .locations a {
+  .job {
+    border: solid 1px var(--color-1);
+    padding: 40px;
+    width: 200px;
+  }
+
+  ul {
+    display: inline-block;
+    padding: 0;
+  }
+  li::before {
+    content: '';
+  }
+
+  #controls-container ul.selected a {
     color: var(--color-2);
   }
-  a.selected {
+
+  #controls-container ul.selected a.selected {
     color: var(--color-1);
+  }
+
+  #controls-container li {
+    display: inline;
+  }
+
+  .locations {
+    padding-bottom: 32px;
+  }
+
+  h3 {
+    margin-top: 0;
   }
 </style>
