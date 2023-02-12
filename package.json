@@ -23,7 +23,7 @@
     "@web/dev-server": "^0.1.30",
     "eslint": "^8.10.0",
     "eslint-plugin-svelte3": "^3.4.1",
-    "firebase-tools": "^10.2.1",
+    "firebase-tools": "^11.22.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
     "prettier": "^2.6.0",
